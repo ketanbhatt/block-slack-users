@@ -6,7 +6,7 @@ function save_options() {
 		blockedUsers: blockedUsers,
 		enableExtension: enableExtension
 	}, function() {
-		alert("Yuhoo")
+		alert("Configuration Saved. Please refresh your slack websites for the configuration to take effect.")
 	});
 }
 
