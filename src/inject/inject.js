@@ -21,10 +21,10 @@ chrome.extension.sendMessage({}, function(response) {
 		message_div = $('#msgs_div')  // Parent div that contains messages
 
 		chrome.storage.sync.get({
-			users: "",
+			blockedUsers: "",
 			enableExtension: true
 		}, function(items) {
-			blockedUsers = items.users.split(',');
+			blockedUsers = items.blockedUsers.split(',');
 			enableExtension = items.enableExtension;
 
 			if (enableExtension == false){
