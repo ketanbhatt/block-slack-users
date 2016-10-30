@@ -4,7 +4,7 @@
 Hide messages from specific users, make Slack a Happy Place Again! :grin:
 
 ## How To Use:
-1. Drag and drop the file `block-slack-users.crx` on your chrome, and install the extension.
+1. Drag and drop the file `block-slack-users.crx` on your [Extensions page](chrome://extensions/), and install the extension.
 2. Click on the extension icon or navigate to extension options.
 3. Enter the `User ID` of the user you want to block. **NOTE:** This User ID is not the slack handle the user has, but the unique ID that slack assigns to every User. 
 4. You can get the User ID by **right clicking on the user's name under the Direct Messages List** on the left, and **selecting `Inspect`**. From there, look for the property **`data-member-id`**. That is the User ID we are looking for.
