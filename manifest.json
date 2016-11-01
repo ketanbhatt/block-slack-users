@@ -1,6 +1,7 @@
 {
-  "name": "Happy Slack!",
-  "version": "0.0.1",
+  "name": "Hide Slack Messages by annoying Users",
+  "short_name": "Happy Slack!",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "Hide messages from specific users, make Slack A Happy Place Again!",
   "homepage_url": "https://github.com/ketanbhatt/block-slack-users",
@@ -19,7 +20,6 @@
     "default_icon": "icons/icon38.png",
     "default_title": "Block users on Slack"
   },
-  "default_locale": "en",
   "permissions": [
     "storage"
   ],

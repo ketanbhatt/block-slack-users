@@ -1,5 +1,5 @@
 <p align="center">
-<img src="/block-slack-users/icons/icon256.png" width="375"/>
+<img src="icons/icon256.png" width="375"/>
 <p align="center">Hide messages from specific users, make Slack a Happy Place Again! :grin:</p>
 </p>
 
