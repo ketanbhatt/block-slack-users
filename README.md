@@ -9,7 +9,7 @@ Hide messages from specific users, make Slack a Happy Place Again! :grin:
 3. Enter the `User ID` of the user you want to block. **NOTE:** This User ID is not the slack handle the user has, but the unique ID that slack assigns to every User. 
 4. You can get the User ID by **right clicking on the user's name under the Direct Messages List** on the left, and **selecting `Inspect`**. From there, look for the property **`data-member-id`**. That is the User ID we are looking for.
 5. You can block multiple users by specifying their User IDs separated by `,`.
-6. Make sure you have want to make Slack a happy place again.
+6. Make sure you want to make Slack a happy place again.
 7. Save!
 
 
