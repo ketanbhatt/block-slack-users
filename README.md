@@ -4,7 +4,7 @@
 </p>
 
 ## Install:
-<a href="https://chrome.google.com/webstore/detail/happy-slack-hide-messages/mjingehmnkofkklkdlipioiinepjghlo"><img src="https://raw.githubusercontent.com/alrra/browser-logos/master/chrome/chrome_128x128.png" width="48" /></a>
+<a href="https://chrome.google.com/webstore/detail/happy-slack-hide-messages/mjingehmnkofkklkdlipioiinepjghlo"><img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" /></a>
 Install Happy Slack! from [Chrome Web Store](https://chrome.google.com/webstore/detail/happy-slack-hide-messages/mjingehmnkofkklkdlipioiinepjghlo).
 
 ## How To Use:
