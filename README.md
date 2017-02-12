@@ -19,9 +19,3 @@ Install Happy Slack! from [Chrome Web Store](https://chrome.google.com/webstore/
 4. You can block multiple users or bots by specifying their User IDs separated by `,`.
 5. Make sure you want to make Slack a happy place again.
 6. Save!
-
-
-## Why?
-
-2. Try to get over your workplace crush by pretending she doesn't exist
-3. Do the same^ for your workplace ex :sob:
