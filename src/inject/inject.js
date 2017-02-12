@@ -4,10 +4,21 @@ chrome.extension.sendMessage({}, function(response) {
 		clearInterval(readyStateCheckInterval);
 
 		blockedUsers = [];
+		onlyBlockDMs = false;
 		enableExtension = false;
 
+		var is_dm_window = function(){
+			var channel_title_div = $('#channel_title')[0]
+			return channel_title_div == undefined  // DMs do not have a DOM element with this ID
+		}
+
 		var should_hide_message = function(message){
-			return Boolean(blockedUsers.indexOf(message.getAttribute('data-member-id')) > -1)
+			var senderId = message.getAttribute('data-member-id')
+			if (senderId == ""){
+				senderId = message.getAttribute('data-bot-id')	
+			}
+
+			return Boolean(blockedUsers.indexOf(senderId) > -1)
 		}
 		var hide_message = function(message){
 			message.style.display = "none";
@@ -22,17 +33,23 @@ chrome.extension.sendMessage({}, function(response) {
 
 		chrome.storage.sync.get({
 			blockedUsers: "",
+			onlyBlockDMs: false,
 			enableExtension: true
 		}, function(items) {
 			blockedUsers = items.blockedUsers.split(',');
+			onlyBlockDMs = items.onlyBlockDMs;
 			enableExtension = items.enableExtension;
 
 			if (enableExtension == false){
 				return
 			}
 
-			// Add function to be called everytime a new node is inserted
+			// Add function to be called everytime a new node is inserted in message_div
 			message_div.bind('DOMNodeInserted', function(event){
+				if (onlyBlockDMs && !is_dm_window()) {
+					return
+				}
+
 				event_target = event.target;
 
 				// Handle new incoming messages
