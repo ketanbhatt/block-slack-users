@@ -88,4 +88,4 @@ chrome.extension.sendMessage({}, function(response) {
 	}, 10);
 });
 
-# vim: set noexpandtab:
+// vim: set noexpandtab:
