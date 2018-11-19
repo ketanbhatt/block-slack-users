@@ -23,3 +23,6 @@ Install Happy Slack! from [Chrome Web Store](https://chrome.google.com/webstore/
 4. You can block multiple users or bots by specifying their User IDs separated by `,`.
 5. Make sure you want to make Slack a happy place again.
 6. Save!
+
+##### Warning (from Slack, although the developer here does not, in any way, even accesses your data)
+_This extension is not officially supported by Slack and is not listed in the Slack App Directory. Your data — including messages, files, and profile information for all workspace members — may be exposed to the developer, so understand the risks before installation._
