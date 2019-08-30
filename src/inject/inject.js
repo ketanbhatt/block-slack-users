@@ -12,7 +12,7 @@ chrome.extension.sendMessage({}, function(response) {
 			return channel_title_div == undefined  // DMs do not have a DOM element with this ID
 		}
 
-		var get_sender_id = function(message, is_thread=false){
+		var get_sender_id = function(message, is_thread=false, depth=0){
 			var senderId = undefined
 
 			if (is_thread) {
@@ -20,10 +20,14 @@ chrome.extension.sendMessage({}, function(response) {
 				if (senderId == ""){
 					senderId = message.getAttribute('data-bot-id')	
 				}
-			} else {
+			} else if (depth < 3 && message != null) {
 				senderId = message.getElementsByClassName('c-message__avatar')[0]
 				if (senderId != undefined) {
 					senderId = senderId.href.split('/').pop()
+				} else {
+					new_depth = depth + 1
+					previous_msg = message.previousSibling
+					senderId = get_sender_id(previous_msg, is_thread, new_depth)
 				}
 			}
 
@@ -77,8 +81,6 @@ chrome.extension.sendMessage({}, function(response) {
 			// Add function to Remove messages from threads
 			thread_div.bind('DOMNodeInserted', function(event){
 				event_target = event.target;
-
-				console.log("DEBUG:: THREAD", event, event_target.tagName)
 
 				// Handle new incoming thread messages
 				if (event_target.tagName == "TS-MESSAGE"){

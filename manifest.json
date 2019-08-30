@@ -1,7 +1,7 @@
 {
   "name": "Hide Slack Messages",
   "short_name": "Happy Slack!",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "manifest_version": 2,
   "description": "Hide messages from specific users and bots, make Slack A Happy Place Again!",
   "homepage_url": "https://github.com/ketanbhatt/block-slack-users",
