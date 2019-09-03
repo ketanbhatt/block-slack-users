@@ -1,3 +1,8 @@
+# UPDATE:
+**This extension is no longer maintained.**  
+Because of latest changes to Slack's frontend, the `message sender`'s details are not attached to every message. Which means, to check if a certain message was sent by a particular sender, we will have to backtrack till a message where the sender's information was available. Doing this for every message will be inefficient and will lead to unnecessary CPU usage for the User.  
+Therefore, I will be archiving the extension now :cry:
+
 <p align="center">
 <img src="icons/icon256.png" width="375"/>
 <p align="center">Hide messages from specific users, make Slack a Happy Place Again! :grin:</p>
